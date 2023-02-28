@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/home_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main" />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="-325dp"
+                android:background="@drawable/logo" />
+
+            <ImageButton
+                android:layout_width="22dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="310dp"
+                android:layout_marginTop="-22dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/test"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="75dp"
+                android:fontFamily="@font/notosanskrbold"
+                android:text="이루다님의\n이번 여행 숙소는\n어디인가요?"
+                android:textColor="@color/white"
+                android:textSize="23dp" />
+
+        </LinearLayout>
+        <EditText
+            android:paddingLeft="15dp"
+            android:id="@+id/hotel_search_view"
+            android:layout_width="985px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/search"
+            android:iconifiedByDefault="true"
+            android:layout_marginTop="-40dp"
+            android:hint="       숙소를 등록해주세요 !"
+            android:drawableRight="@drawable/chk"
+
+            android:textColorHint="@color/black"
+            android:paddingRight="30dp"
+            android:alpha="0.8"
+            android:fontFamily="@font/notosanskrregular"
+            android:textColor="#777777"
+            android:textSize="14dp"
+            android:outlineAmbientShadowColor="@color/black" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:background="@color/white"
+            android:alpha="0.1"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="-70dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosanskrbold"
+        android:text="카테고리 추천"
+        android:textColor="#494949"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-15dp"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosanskrmedium"
+        android:layout_marginTop="-20dp"
+        android:textColor="#A4A4A4"
+        android:text="루민 회원들이 가장 많이 등록하는 숙소"
+        android:textSize="13dp" />
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp">
+            <Button
+                android:text="Japen"
+                android:drawableLeft="@drawable/japan"
+                android:layout_width="120dp"
+                android:textSize="12dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="#D1D1D1"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/btnradius2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:text="USA"
+                android:textSize="12dp"
+                android:drawableLeft="@drawable/usa"
+                android:textColor="#D1D1D1"
+                android:layout_width="120dp"
+                android:paddingLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btnradius" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:text="china"
+                android:textSize="12dp"
+                android:paddingLeft="10dp"
+                android:drawableLeft="@drawable/china"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#D1D1D1"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnradius" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pro"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/notosanskrregular"
+            android:text="CHECK POINT"
+            android:textFontWeight="700"
+            android:textColor="#435892"
+            android:textSize="13dp" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="92dp"
+            android:layout_height="32dp"
+            android:background="#494949"
+            android:textAlignment="center"
+            android:layout_marginTop="-6dp"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-42dp"
+            android:fontFamily="@font/notosanskrbold"
+            android:text="쉬운 체크인"
+            android:textColor="#FBFBFB"
+            android:textSize="17dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-23dp"
+            android:fontFamily="@font/notosanskrbold"
+            android:text="필요하셨나요 ?"
+            android:textColor="#494949"
+            android:textSize="17dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/number"
+            android:layout_marginLeft="300dp"
+            android:layout_marginBottom="23dp"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_marginTop="30dp"
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:itemIconSize="22dp"
+        app:itemIconTint="@drawable/menu_selector_color"
+        app:itemTextColor="@drawable/menu_selector_color"
+        app:menu="@menu/btm_navi_menu">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</LinearLayout>

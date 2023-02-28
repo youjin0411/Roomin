@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/home_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="70dp"
+            android:layout_height="18dp"
+            android:background="@drawable/blog" />
+
+        <ImageButton
+            android:layout_marginTop="-20dp"
+            android:layout_marginLeft="315dp"
+            android:layout_width="22dp"
+            android:layout_height="24dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/btiome"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/person"/>
+                <TextView
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="-47dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="반가워요, 이루다 님"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/notosanskrregular"/>
+                <ImageView
+                    android:layout_marginLeft="34dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Osaka, Japan"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginTop="-20dp"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hothlimg" />
+        </LinearLayout>
+        <TextView
+            android:paddingLeft="15dp"
+            android:id="@+id/hotel_search_view"
+            android:layout_width="800px"
+            android:layout_height="150px"
+            android:layout_gravity="center"
+            android:background="@drawable/search"
+            android:iconifiedByDefault="true"
+            android:layout_marginTop="-110dp"
+            android:textAlignment="center"
+            android:hint="호텔 한큐 리스파이어 오사카"
+            android:drawableRight="@drawable/chk"
+            android:alpha="0.8"
+            android:paddingRight="15dp"
+            android:fontFamily="@font/notosanskrmedium"
+            android:textColor="#353535"
+            android:textSize="17dp"
+            android:outlineAmbientShadowColor="@color/black" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-60dp">
+        <androidx.appcompat.widget.AppCompatButton
+            android:text="체크인"
+            android:drawableLeft="@drawable/japan"
+            android:layout_width="140dp"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="#494949"
+            android:fontFamily="@font/notosanskrregular"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/btnradius" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:text="서비스"
+            android:textSize="15dp"
+            android:fontFamily="@font/notosanskrregular"
+            android:drawableLeft="@drawable/usa"
+            android:textColor="#494949"
+            android:layout_width="140dp"
+            android:paddingLeft="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btnradius" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosanskrmedium"
+        android:text="루다님에게 추천하는 호텔"
+        android:textColor="#494949"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:textSize="15dp" />
+
+    <HorizontalScrollView
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp">
+            <androidx.appcompat.widget.AppCompatButton
+                android:text="The Royal Park HotelIconic Osaka"
+                android:drawableTop="@drawable/h1"
+                android:layout_width="220dp"
+                android:textSize="12dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#494949"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/btnradius" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="220dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btnradius"
+                android:drawableTop="@drawable/h2"
+                android:text="하톤 호텔 신사이바시나가호리도우리"
+                android:textColor="#494949"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/pro"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/notosanskrregular"
+            android:text="CHECK POINT"
+            android:textFontWeight="700"
+            android:textColor="#435892"
+            android:textSize="13dp" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="92dp"
+            android:layout_height="32dp"
+            android:background="#494949"
+            android:textAlignment="center"
+            android:layout_marginTop="-6dp"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-42dp"
+            android:fontFamily="@font/notosanskrbold"
+            android:text="쉬운 체크인"
+            android:textColor="#FBFBFB"
+            android:textSize="17dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-23dp"
+            android:fontFamily="@font/notosanskrbold"
+            android:text="필요하셨나요 ?"
+            android:textColor="#494949"
+            android:textSize="17dp" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:background="@drawable/number"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="-30dp"/>
+    </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_marginTop="15dp"
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:itemIconSize="22dp"
+        app:itemIconTint="@drawable/menu_selector_color"
+        app:itemTextColor="@drawable/menu_selector_color"
+        app:menu="@menu/btm_navi_menu">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</LinearLayout>
